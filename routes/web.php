@@ -22,3 +22,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('generate/pdf', [App\Http\Controllers\PDFController::class, 'generatePDF']);
+
+
+Route::get ('github', [App\Http\Controllers\PDFController::class, 'github']);
